@@ -1,0 +1,62 @@
+<!-- 
+    Welcome to your Lesson 2 - Challenge 2
+In the previous challenge, you styled some HTML elements. You targeted the HTML by creating associated element style rules inside the inline <style> element. 
+You used one style declaration for each of the rules. However, a style rule can contain more than one style declaration. 
+ 
+Also in the last challenge, you were encouraged to search the web for other formats available to the color property. By doing this you will have found you can also use RGB and hex formatting to specify millions of colors.
+ 
+In this challenge, you will modify some of the rules created in your last challenge.
+Also as part of this challenge, you will set some of the text colours using hex and RGB .
+ 
+In particular, you will:
+Set the font type for the entire page
+Edit the heading text color
+Set all heading text to uppercase.
+Highlight emphasised text by assigning it a particular color.
+Highlight bold text by assigning it a particular color.
+
+Steps
+Add a font-family property to the body rule. Set it to Arial
+Change the style declaration for the h1 rule and use the hex format for the color property. Set the color to #ffd700
+Add a text-transform property to the h1 rule. Set the value to uppercase .
+Add a color property to the em rule using the RGB format. Set the color to rgb(0, 128, 0)
+Add a color property to the strong rule using the RGB format. Set the color to rgb(0, 0, 0)
+ -->
+
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>Day 2 Challenge 2</title>
+	<style>
+		body {
+			font-size: 14px;
+			font-family: Arial;
+		}
+		h1 {
+			color: #ffd700;
+			text-transform: uppercase;
+		}
+		p {
+			color: darkslategray;
+		}
+		em {
+			font-size: 20px;
+			color: rgb(0, 128, 0);
+		}
+		strong {
+			font-size: 24px;
+			color: rgb(0, 0, 0);
+		}
+
+	</style>
+  </head>
+
+  <body>
+	  
+	  <h1>Why is HTML so successful?</h1>
+	  <p>Html is <em>easy</em></p>
+	  <p>Html is <strong>fun</strong></p>
+	  
+  </body>
+
+</html>

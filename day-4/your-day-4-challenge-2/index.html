@@ -1,0 +1,98 @@
+<!-- 
+    Welcome to your Lesson 4 - Challenge 2
+Having added all the HTML we require for the recipe page it is now time to start styling the page.
+The most common and most useful location for CSS style rules in a separate file that is linked to one or more HTML documents that are targets of the styles. Why? Because a central change made to a style will update all the web pages that link to and use that style. Central location changes are easier to manage than multiple duplicated style content saved across many documents. So let's do that now.
+ 
+In particular, you will:
+Style the default text font
+Size the main heading
+Color the headings
+Make the heading text uppercase
+
+Steps
+In the panel on the left, you will see there are two tabs, one of which is named index.css. Note the .css
+Our HTML document named index.html links to the CSS file on line 7.
+Click on the index.css file to view/edit/add style rules.
+Create a style rule with a type selector that targets the <body> element
+Inside the body rule set the font family to Arial
+Inside the body rule set the color property to slategray
+Create a style rule with a type selector that targets the <h1> element
+Inside the h1 rule set the font-size property to 300%
+Create a style rule with a type selector that targets both <h1> and <h2> elements
+Inside the h1, h2 rule set the color property to orange 
+Inside this rule set the text-transform property to uppercase
+Inside this rule set the font-weight property to 100
+Create a style rule with a type selector that targets the <img> element
+Inside the img rule set the width property to 100%
+ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tea Recipe</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>How to make Tea</h1>
+        <img src="https://codeinstitute.s3-eu-west-1.amazonaws.com/5DCC/images/Content/oSVKMED.jpg"
+            alt="A man drinking tea">
+
+        <p>At the very least, tea is a flavourful way of getting enough fluid into your body each day.
+            On top of that, studies have shown teas can help protect your teeth and your heart</p>
+
+    </header>
+
+    <section>
+        <h2>ingredients</h2>
+        <ul>
+            <li>Tea Bag</li>
+            <li>Water</li>
+            <li>Milk - Dairy/Plant based(Optional)</li>
+            <li>Sugar/Honey (Optional)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>preparation</h2>
+        <ol>
+            <li>
+                Run the tap a little so the water's nicely aerated, and only boil it once to keep the oxygen level up.
+                Oxygen in water helps flavour!
+            </li>
+            <li>
+                Pop a tea bag into your mug (<em>always</em> a big mug)
+            </li>
+            <li>
+                Pour the hot water over the tea bag and stir briefly.
+            </li>
+            <li>
+                Tea needs time to unlock all its flavour, so give it 3-4 minutes to do its thing. This is a perfect time
+                to grab a sneaky cookie or daydream about vacations.
+            </li>
+            <li>
+                Before removing the tea bag, gently squish it with a spoon against the side of the mug. Not too much or
+                you'll make it bitter.
+            </li>
+            <li>
+                If you want, throw in some milk or sugar or honey or nothing else at all.
+            </li>
+            <li>
+                Enjoy!
+            </li>
+        </ol>
+    </section>
+
+    <footer>
+        <p>Copyright Me 2020</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

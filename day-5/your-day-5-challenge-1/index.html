@@ -1,0 +1,89 @@
+<!-- 
+    Welcome to your Lesson 5 - Challenge 1
+Our recipe site is really coming together now. We next need to make sure that its design and structural integrity is maintained across device sizes. Your challenge is to make your recipe page be responsive to the size of the screen that it is viewed on.
+ 
+In particular, you will:
+Add an outer container that wraps around all the content of the page
+Target that container with a style that sets the container width and also centers the container
+Target that container with a media query that contains styles that are triggered once the screen size goes below a certain value
+
+Steps
+On line 13 a <div> element that acts as the parent for all content has been created for you. Add an id attribute to that <div> element with the value of container
+Create a style rule with an id selector that targets the container id
+Inside the #container rule set the width to 60%
+Inside the #container rule set the margin to auto
+Create a media query that will apply styles for screen size up to a max-width of 768px
+Reuse the #container style rule inside the media query and set the width to 90%
+Reuse the h1 style rule inside the  media query and set the font-size to 200%
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Tea Recipe</title>
+
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- Add the id to this div -->
+    <div id="container">
+      <header>
+        <h1>How to make Tea</h1>
+        <img
+          src="https://codeinstitute.s3-eu-west-1.amazonaws.com/5DCC/images/Content/oSVKMED.jpg"
+          alt="A man drinking tea"
+        />
+
+        <p>
+          At the very least, tea is a flavourful way of getting enough fluid
+          into your body each day. On top of that, studies have shown teas can
+          help protect your teeth and your heart
+        </p>
+      </header>
+
+      <section>
+        <h2>ingredients</h2>
+        <ul>
+          <li>Tea Bag</li>
+          <li>Water</li>
+          <li>Milk - Dairy/Plant based(Optional)</li>
+          <li>Sugar/Honey (Optional)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>preparation</h2>
+        <ol>
+          <li>
+            Run the tap a little so the water's nicely aerated, and only boil it
+            once to keep the oxygen level up. Oxygen in water helps flavour!
+          </li>
+          <li>Pop a tea bag into your mug (<em>always</em> a big mug)</li>
+          <li>Pour the hot water over the tea bag and stir briefly.</li>
+          <li>
+            Tea needs time to unlock all its flavour, so give it 3-4 minutes to
+            do its thing. This is a perfect time to grab a sneaky cookie or
+            daydream about vacations.
+          </li>
+          <li>
+            Before removing the tea bag, gently squish it with a spoon against
+            the side of the mug. Not too much or you'll make it bitter.
+          </li>
+          <li>
+            If you want, throw in some milk or sugar or honey or nothing else at
+            all.
+          </li>
+          <li>Enjoy!</li>
+        </ol>
+      </section>
+
+      <footer>
+        <p>Copyright Me 2020</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

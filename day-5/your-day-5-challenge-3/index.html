@@ -1,0 +1,154 @@
+<!-- 
+    Welcome to your Lesson 5 Challenge 3
+At this point, you have all your HTML structure and CSS styling in place. Well done for getting this far! In this challenge, you will add some JavaScript interactivity to the recipe site. Interactivity can be as simple or complex as needed. Our interactivity is used to draw the user's attention to the recipe ingredients and preparation steps when moving their mouse on the page
+ 
+In particular, you will:
+Trigger an event that increases the size of the ingredients Font Awesome icon when a user's mouse passes over the ingredients section
+Trigger an event that returns the ingredients Font Awesome icon to normal size when a user's mouse passes out of the ingredients section
+Trigger an event that increases the size of the preparation Font Awesome icon when a user's mouse passes over the preparation section
+Trigger an event that returns the preparation Font Awesome icon to normal size when a user's mouse passes out of the preparation section
+
+Steps
+Take a look at lines 22 and 33 . You'll see that there are two of what are called event listeners added as attributes to the ingredients and preparation sections . Their job is to listen for and react to two particular events . One reacts when a user's mouse passes into the section area ( onmouseover ) and the second reacts when a user's mouse passes out of the section ( onmouseout ).
+When one of these events occurs the appropriate event listener calls a function . For example, when the user's mouse passes into the ingredients section the onmouseover event listener will call a function named ingredientsHover() . This is function is written by the programmer.
+You will create a function with the same name as the function referred to in the event listener.
+Inside that function, you will write the code that resizes the icon when the event happens.
+You will write four functions.
+Two for the ingredients section and two for the preparation section.
+A <script> element has already been created for you. You will add your JavaScript functions within that element
+Ingredients
+Create the function that is called when the ingredients onmouseover event is triggered. The code is shown below. Notice how the function name tries to indicate its purpose
+function ingredientsHover(){
+ 
+}
+Add the code that changes the ingredients icon size. This will be placed inside the function's curly braces {}. The code is shown below. Try and understand how it works. Read it from left to right. The document represents the web page
+document.getElementById("ingredients").style.fontSize = "300%";
+Create the function that is called when the ingredients onmouseout event is triggered. The code is shown below
+function ingredientsNormal(){
+ 
+}
+Add the code that resets the ingredients icon size to its default size. This will be placed inside the function's curly braces {}. The code is shown below. Try to understand how it works.
+document.getElementById("ingredients").style.fontSize = "100%";
+ 
+Preparation
+Create the function that is called when the preparation onmouseover event is triggered. The code is shown below
+function preparationHover(){
+ 
+}
+Add the code that changes the preparation icon size. This will be placed inside the function's curly braces {}. The code is shown below. Try to understand how it works.
+document.getElementById("preparation").style.fontSize = "300%";
+Create the function that is called when the preparation onmouseout event is triggered. The code is shown below
+function preparationNormal(){
+ 
+}
+Add the code that resets the preparation icon size to its default size. This will be placed inside the function's curly braces {}. The code is shown below. Try to understand how it works.
+document.getElementById("preparation").style.fontSize = "100%";
+And That's it!
+Well done on completing your challenges. We hope this inspired you to explore the world of software development even further. Whatever you decide to do next, do what you love. Life is too short to do anything less.
+ 
+The Code Institute Team
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Tea Recipe</title>
+    <!-- add the font awesome link here -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      type="text/css"
+    />
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>How to make Tea</h1>
+        <img
+          src="https://codeinstitute.s3-eu-west-1.amazonaws.com/5DCC/images/Content/oSVKMED.jpg"
+          alt="A man drinking tea"
+        />
+
+        <p>
+          At the very least, tea is a flavourful way of getting enough fluid
+          into your body each day. On top of that, studies have shown teas can
+          help protect your teeth and your heart
+        </p>
+      </header>
+
+      <section
+        onmouseover="ingredientsHover()"
+        onmouseout="ingredientsNormal()"
+      >
+        <!-- add a fontawesome icon here -->
+        <h2>
+          ingredients
+          <i id="ingredients" class="fa fa-coffee" aria-hidden="true"></i>
+        </h2>
+        <ul>
+          <li>Tea Bag</li>
+          <li>Water</li>
+          <li>Milk - Dairy/Plant based(Optional)</li>
+          <li>Sugar/Honey (Optional)</li>
+        </ul>
+      </section>
+
+      <section
+        onmouseover="preparationHover()"
+        onmouseout="preparationNormal()"
+      >
+        <!-- add a fontawesome icon here -->
+        <h2>
+          preparation
+          <i id="preparation" class="fa fa-check-circle" aria-hidden="true"></i>
+        </h2>
+        <ol>
+          <li>
+            Run the tap a little so the water's nicely aerated, and only boil it
+            once to keep the oxygen level up. Oxygen in water helps flavour!
+          </li>
+          <li>Pop a tea bag into your mug (<em>always</em> a big mug)</li>
+          <li>Pour the hot water over the tea bag and stir briefly.</li>
+          <li>
+            Tea needs time to unlock all its flavour, so give it 3-4 minutes to
+            do its thing. This is a perfect time to grab a sneaky cookie or
+            daydream about vacations.
+          </li>
+          <li>
+            Before removing the tea bag, gently squish it with a spoon against
+            the side of the mug. Not too much or you'll make it bitter.
+          </li>
+          <li>
+            If you want, throw in some milk or sugar or honey or nothing else at
+            all.
+          </li>
+          <li>Enjoy!</li>
+        </ol>
+      </section>
+
+      <footer>
+        <p>Copyright Me 2022 <a href="http://abdurrahmang.github.io" target="_blank" rel="noopener noreferrer">AbdurRahman G</a></p>
+      </footer>
+    </div>
+    <script>
+      function ingredientsHover() {
+        document.getElementById("ingredients").style.fontSize = "300%";
+      }
+
+      function ingredientsNormal() {
+        document.getElementById("ingredients").style.fontSize = "100%";
+      }
+
+      function preparationHover() {
+        document.getElementById("preparation").style.fontSize = "300%";
+      }
+
+      function preparationNormal() {
+        document.getElementById("preparation").style.fontSize = "100%";
+      }
+    </script>
+  </body>
+</html>

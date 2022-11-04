@@ -1,0 +1,83 @@
+<!-- 
+    Welcome to your Lesson 5 - Challenge 2
+Discerningly placed icons can draw the user's eye to important content on a site.
+Your challenge is to add external font icons to your recipe.
+ 
+In particular, you will:
+Place an icon within your ingredients sub-heading
+Place an icon within your preparation sub-heading
+
+Steps
+Copy the font awesome link and paste it into the head area of your HTML : <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" /> Place it above the link to the index.css file.
+Go To the Font Awesome website below and choose fonts from the 4.7 icon set: https://fontawesome.com/v4.7.0/icons/
+Add a font icon to the ingredients sub-heading
+Add a font icon to the preparation sub-heading
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>repl.it</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      type="text/css"
+    />
+
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>How to make tea</h1>
+        <img src="https://i.imgur.com/oSVKMED.jpg" />
+        <p>
+          At the very least, tea is a flavourful way of getting enough fluid
+          into your body each day. On top of that, studies have shown teas can
+          help protect your teeth and your heart
+        </p>
+      </header>
+      <section>
+        <h2>ingredients <i class="fa fa-coffee" aria-hidden="true"></i></h2>
+        <ul>
+          <li>Tea bag</li>
+          <li>Water</li>
+          <li>Milk - Dairy/Plant-based (Optional)</li>
+          <li>Sugar/Honey (Optional)</li>
+        </ul>
+      </section>
+      <section>
+        <h2>preparation <i class="fa fa-book" aria-hidden="true"></i></h2>
+        <ol>
+          <li>
+            Run the tap a little so the water's nicely aerated, and only boil it
+            once to keep the oxygen level up. Oxygen in water helps flavour!
+          </li>
+          <li>Pop a tea bag into your mug (<em>always</em> a big mug)</li>
+          <li>Pour the hot water over the tea bag and stir briefly.</li>
+          <li>
+            Tea needs time to unlock all its flavour, so give it 3-4 minutes to
+            do its thing. This is a perfect time to grab a sneaky cookie or
+            daydream about vacations.
+          </li>
+          <li>
+            Before removing the tea bag, gently squish it with a spoon against
+            the side of the mug. Not too much or you'll make it bitter.
+          </li>
+          <li>
+            If you want, throw in some milk or sugar or honey or nothing else at
+            all.
+          </li>
+          <li>Enjoy!</li>
+        </ol>
+      </section>
+      <footer>
+        <p>Copyright Me 2018</p>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
